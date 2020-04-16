@@ -21,9 +21,8 @@ class Gateway extends AbstractGateway
         return array(
             'client_id' => '',
             'client_secret' => '',
-            'grant_type' => '',
             'access_token' => '',
-            'external_reference' => ''
+            'redirect_url' => ''
         );
     }
 
