@@ -12,6 +12,21 @@ class Gateway extends AbstractGateway
         return 'MercadoPago';
     }
 
+    /**
+     * @return array
+     */
+    public function getDefaultParameters()
+    {
+    	//To Show in OctoberCMS Backend
+        return array(
+            'client_id' => ''
+            'client_secret' => ''
+            'grant_type' => ''
+            'access_token' => ''
+            'external_reference' => ''
+        );
+    }
+
     public function getClientId()
     {
         return $this->getParameter('client_id');
