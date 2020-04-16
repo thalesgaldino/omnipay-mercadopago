@@ -19,10 +19,10 @@ class Gateway extends AbstractGateway
     {
     	//To Show in OctoberCMS Backend
         return array(
-            'client_id' => ''
-            'client_secret' => ''
-            'grant_type' => ''
-            'access_token' => ''
+            'client_id' => '',
+            'client_secret' => '',
+            'grant_type' => '',
+            'access_token' => '',
             'external_reference' => ''
         );
     }
