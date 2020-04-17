@@ -22,7 +22,7 @@ class Gateway extends AbstractGateway
             'client_id' => '',
             'client_secret' => '',
             'access_token' => '',
-            'is_test' => '',
+            'testMode' => '',
             'returnUrl' => '',
             'cancelUrl' => ''
         );
