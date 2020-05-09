@@ -30,21 +30,23 @@ class PurchaseRequest extends AbstractRequest
 
     public function getData()
     {
+        $totalValue = (float) $this->getAmount();
         $data = array(
             "items" => array(
                 array(
-                    'title'       => 'PurchaseTest',
+                    'title'       => 'Compras Sabor do Trigo',
                     'quantity'    => 1,
-                    'category_id' => 'tickets',
+                    'category_id' => 'food',
                     'currency_id' => 'BRL',
-                    'unit_price'  => 10.0
+                    'unit_price'  => $totalValue
                 )
             ));
 
-        $items = $this->getItemData();
+        //comment temporarily
+        // $items = $this->getItemData();
         $external_reference = parent::getData();
         $purchaseObject = [
-            'items'              => $items,
+            'items'              => $data['items'],
             'external_reference' => $external_reference,
             'auto_return'        => 'approved',
             'back_urls'          => [
